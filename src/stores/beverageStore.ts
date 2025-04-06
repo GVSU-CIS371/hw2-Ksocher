@@ -21,7 +21,7 @@ export const useBeverageStore = defineStore("BeverageStore", {
   actions: {
     makeBeverage(name: string) {
       const newBeverage: BeverageType = {
-        id: '${name}-${Date.now()}',
+        id: '${name}',
         name,
         temp: this.currentTemp,
         base: this.currentBase,
